@@ -1,0 +1,8 @@
+.DS_Store
+
+backend/api/venv
+backend/api/__pycache__
+
+frontend/bot/.env
+frontend/bot/venv/
+frontend/bot/handlers/__pycache__
