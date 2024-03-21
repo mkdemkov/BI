@@ -2,8 +2,6 @@ def show_tuples(tuples: []) -> str:
     res = ""
     print(type(tuples))
     if len(tuples) <= 10:
-        print(tuples)
-        print("-----")
         for tup in tuples:
             res += f"<b>{tup[0]}</b> "
             tup = tup[1:]
@@ -20,7 +18,7 @@ def show_tuples(tuples: []) -> str:
             tup_str = [str(item) for item in tup]
             res += ";".join(tup_str)
             res += "\n"
-        res += "..."
+        res += ".........\n"
         for tup in last_five:
             res += f"<b>{tup[0]}</b> "
             tup = tup[1:]

@@ -13,7 +13,8 @@ class TarantoolConnector:
     def __init__(self):
         self._user = os.getenv("TARANTOOL_USER")
         self._password = os.getenv("TARANTOOL_PASSWORD")
-        self.connection = tarantool.connect(self._host, self._port, self._user, self._password)
+        self.connection = tarantool.connect(self._host, self._port, self._user)
+        # self.connection = tarantool.connect(self._host, self._port, self._user, self._password)
 
     def get_workspace(self):
         workspace = self.connection.call('get_data').data

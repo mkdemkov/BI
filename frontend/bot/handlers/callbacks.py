@@ -1,4 +1,5 @@
 import os
+import time
 
 from aiogram import Router, F, types
 from aiogram.fsm.context import FSMContext
@@ -9,7 +10,7 @@ from frontend.bot.misc.export import process_csv_export
 from frontend.bot.misc.import_data import form_data_csv
 from frontend.bot.states.work_space import WorkSpace
 from frontend.bot.keyboards.inline_keyboards import create_workspace_button, options_with_data_keyboard, \
-    export_types_keyboard
+    export_types_keyboard, workspace_option_keyboard
 from frontend.bot.get_info_from_api import get_workspace, import_data
 from frontend.bot.utils.tuples import show_tuples, create_tuples
 
@@ -55,7 +56,6 @@ async def file_test(message: types.Message, state: FSMContext):
         )
     data = form_data_csv(destination_file)
     res = await import_data(data)
-    print(res)
     tuples_to_show = show_tuples(res)
     await message.answer(tuples_to_show, reply_markup=options_with_data_keyboard)
     await state.clear()
@@ -69,10 +69,11 @@ async def export_workspace(callback: types.CallbackQuery, state: FSMContext):
 
 @router.callback_query(F.data == 'csv_export')
 async def export_csv(callback: types.CallbackQuery):
+    await callback.message.answer("Начал экспорт")
     await process_csv_export()
+    time.sleep(0)  # заглушка чтобы файл точно обновился до отправки
     document = FSInputFile('data.csv')
     await callback.message.answer_document(document)
-    # TODO send at least a keyboard with workspace options
 
 
 @router.callback_query(F.data == 'xlsx_export')
