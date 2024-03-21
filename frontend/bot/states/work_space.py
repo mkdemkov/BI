@@ -1,5 +1,6 @@
 from aiogram.fsm.state import StatesGroup, State
 
 
-class WorkSpaceCreator(StatesGroup):
+class WorkSpace(StatesGroup):
     upload_data = State()
+    choose_file_type = State()

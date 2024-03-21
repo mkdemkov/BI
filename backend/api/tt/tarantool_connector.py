@@ -27,3 +27,8 @@ class TarantoolConnector:
         except Exception as ex:
             print(str(ex))
             return False
+
+    def load_data_and_export(self):
+        data = self.connection.space('workspace').select().data
+        self.connection.call('remove_workspace')
+        return data

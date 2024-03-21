@@ -6,6 +6,7 @@ venv/
 backend/api/__pycache__
 
 frontend/bot/__pycache__/
+frontend/bot/data.csv
 frontend/bot/handlers/__pycache__
 frontend/bot/keyboards/__pycache__
 frontend/bot/states/__pycache__

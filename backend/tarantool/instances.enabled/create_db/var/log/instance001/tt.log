@@ -465,3 +465,102 @@ started
 	builtin/box/schema.lua:2482: in function 'select'
 	[string "return function()..."]:7: in function <[string "return function()..."]:1>
 	[C]: at 0x01024455f0
+2024-03-21 19:06:30.516 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 20:06:30 2024
+2024-03-21 20:06:30.589 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 21:06:30 2024
+2024-03-21 20:15:35.786 [1680] main/497/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 20:16:14.553 [1680] main/499/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 20:17:08.327 [1680] main/500/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 20:17:31.637 [1680] main/501/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 20:21:52.922 [1680] main/507/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 20:23:37.351 [1680] main/511/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 20:24:24.950 [1680] main/514/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 20:25:06.430 [1680] main/515/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 20:25:40.313 [1680] main/517/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 20:25:57.825 [1680] main/518/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 20:34:53.732 [1680] main/528/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 20:43:42.671 [1680] main/538/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 21:06:30.591 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 22:06:30 2024
+2024-03-21 21:07:40.714 [1680] main/550/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 21:08:06.163 [1680] main/552/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 21:10:04.420 [1680] main/556/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 21:18:59.451 [1680] main/569/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0

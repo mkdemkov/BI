@@ -11,3 +11,9 @@ tt = TarantoolConnector()
 async def get_data():
     result = tt.get_workspace()
     return result
+
+
+@app.get('/export_workspace')
+async def export_workspace():
+    result = tt.load_data_and_export()
+    return result

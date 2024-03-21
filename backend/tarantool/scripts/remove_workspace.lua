@@ -1,1 +1,3 @@
-box.space.workspace:drop()
+function()
+    box.space.workspace:truncate()
+end
