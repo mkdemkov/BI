@@ -18,3 +18,20 @@ def create_workspace_options_keyboard() -> InlineKeyboardMarkup:
 
 
 workspace_option_keyboard = create_workspace_options_keyboard()
+
+
+def create_workspace_select_button() -> InlineKeyboardMarkup:
+    builder = InlineKeyboardBuilder()
+    builder.add(types.InlineKeyboardButton(
+        text="workspace",
+        callback_data="workspace"
+    ))
+    return builder.as_markup()
+
+
+workspace_button = create_workspace_select_button()
+
+create_workspace_button = InlineKeyboardBuilder().add(types.InlineKeyboardButton(
+    text="Создать РО",
+    callback_data='create_workspace'
+)).as_markup()

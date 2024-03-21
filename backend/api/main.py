@@ -1,16 +1,13 @@
-# from fastapi import FastAPI
+import tarantool
 
-# app = FastAPI()
+from fastapi import FastAPI
+from tt.tarantool_connector import TarantoolConnector
 
-# data = [
-#     (1, "dadada", -16),
-#     (2, "wowo", 14),
-#     # more rows as needed
-# ]
+app = FastAPI()
+tt = TarantoolConnector()
 
-# headers = ["ID", "Description", "Value"]
 
-# @app.get('/my_data')
-# async def get_data():
-#     dict_data = [dict(zip(headers, row)) for row in data]
-#     return dict_data
+@app.get('/get_workspace')
+async def get_data():
+    result = tt.get_workspace()
+    return result

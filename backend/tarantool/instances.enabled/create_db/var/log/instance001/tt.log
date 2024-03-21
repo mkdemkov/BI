@@ -77,3 +77,391 @@ started
 2024-03-19 13:37:31.079 [19071] main/106/checkpoint_daemon I> scheduled next checkpoint for Tue Mar 19 14:30:09 2024
 2024-03-19 14:30:09.951 [19071] main/106/checkpoint_daemon I> scheduled next checkpoint for Tue Mar 19 15:30:09 2024
 2024-03-19 15:30:09.828 [19071] main/106/checkpoint_daemon I> scheduled next checkpoint for Tue Mar 19 16:30:09 2024
+Watchdog 2024/03/19 20:51:09 (INFO): using "/Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2024-03-19 20:51:09.240 [5391] main/103/interactive I> Tarantool 3.0.1-0-g31c2ddb Darwin-arm64-Release
+2024-03-19 20:51:09.241 [5391] main/103/interactive I> log level 5 (INFO)
+2024-03-19 20:51:09.241 [5391] main/103/interactive I> wal/engine cleanup is paused
+2024-03-19 20:51:09.241 [5391] main/103/interactive I> mapping 268435456 bytes for memtx tuple arena...
+2024-03-19 20:51:09.241 [5391] main/103/interactive I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2024-03-19 20:51:09.241 [5391] main/103/interactive I> mapping 134217728 bytes for vinyl tuple arena...
+2024-03-19 20:51:09.243 [5391] main/103/interactive/box.upgrade I> Recovering snapshot with schema version 3.0.0
+2024-03-19 20:51:09.244 [5391] main/103/interactive I> update replication_synchro_quorum = 1
+2024-03-19 20:51:09.244 [5391] main/103/interactive I> instance uuid f500c005-d956-42f5-ba74-f04cf6b69c4d
+2024-03-19 20:51:09.244 [5391] main/103/interactive I> instance vclock {}
+2024-03-19 20:51:09.244 [5391] main/103/interactive I> tx_binary: bound to 127.0.0.1:3301
+2024-03-19 20:51:09.244 [5391] main/103/interactive I> recovery start
+2024-03-19 20:51:09.244 [5391] main/103/interactive I> recovering from `/Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000000.snap'
+2024-03-19 20:51:09.245 [5391] main/103/interactive I> replicaset name: replicaset001
+2024-03-19 20:51:09.245 [5391] main/103/interactive I> replicaset uuid 85c2f428-f49d-4493-a50b-bb53efc273e4
+2024-03-19 20:51:09.263 [5391] main/103/interactive I> assigned id 1 to replica f500c005-d956-42f5-ba74-f04cf6b69c4d
+2024-03-19 20:51:09.263 [5391] main/103/interactive I> update replication_synchro_quorum = 1
+2024-03-19 20:51:09.263 [5391] main/103/interactive I> assigned name instance001 to replica f500c005-d956-42f5-ba74-f04cf6b69c4d
+2024-03-19 20:51:09.263 [5391] main/103/interactive I> ready to accept requests
+2024-03-19 20:51:09.263 [5391] main/103/interactive I> leaving orphan mode
+2024-03-19 20:51:09.263 [5391] main/105/gc I> wal/engine cleanup is resumed
+2024-03-19 20:51:09.263 [5391] main/103/interactive/box.load_cfg I> set 'custom_proc_title' configuration option to "tarantool - instance001"
+2024-03-19 20:51:09.263 [5391] main/103/interactive/box.load_cfg I> set 'instance_name' configuration option to "instance001"
+2024-03-19 20:51:09.263 [5391] main/103/interactive/box.load_cfg I> set 'log_nonblock' configuration option to false
+2024-03-19 20:51:09.263 [5391] main/103/interactive/box.load_cfg I> set 'replicaset_name' configuration option to "replicaset001"
+2024-03-19 20:51:09.263 [5391] main/103/interactive/box.load_cfg I> set 'listen' configuration option to [{"uri":"127.0.0.1:3301"}]
+2024-03-19 20:51:09.263 [5391] main/103/interactive/box.load_cfg I> set 'metrics' configuration option to {"labels":{"alias":"instance001"},"include":["all"],"exclude":[]}
+2024-03-19 20:51:09.263 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Tue Mar 19 22:50:37 2024
+2024-03-19 20:51:09.269 [5391] main/114/console/unix/: sio.c:315 !> getpeername: Invalid argument
+2024-03-19 20:51:09.269 [5391] main/103/interactive I> update replication_synchro_quorum = 1
+2024-03-19 20:51:09.269 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Tue Mar 19 22:16:36 2024
+2024-03-19 20:51:09.270 [5391] main I> entering the event loop
+2024-03-19 21:09:13.768 [5391] main/130/console/unix/: C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function <builtin/box/schema.lua:2468>
+	[C]: in function 'pcall'
+	builtin/box/console.lua:427: in function <builtin/box/console.lua:400>
+	[string "local function func(...) return require('cons..."]:1: in main chunk
+	[C]: in function 'pcall'
+	builtin/box/console.lua:427: in function 'eval'
+	builtin/box/console.lua:819: in function 'repl'
+	builtin/box/console.lua:988: in function <builtin/box/console.lua:974>
+	[C]: in function 'pcall'
+	builtin/socket.lua:1138: in function <builtin/socket.lua:1136>
+2024-03-19 22:27:42.855 [5391] snapshot/101/main I> saving snapshot `/Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000010.snap.inprogress'
+2024-03-19 22:27:42.857 [5391] snapshot/101/main I> done
+2024-03-19 22:27:42.934 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Tue Mar 19 23:16:36 2024
+2024-03-19 23:16:36.226 [5391] snapshot/101/main I> saving snapshot `/Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000013.snap.inprogress'
+2024-03-19 23:16:36.228 [5391] snapshot/101/main I> done
+2024-03-19 23:16:36.229 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 00:16:36 2024
+2024-03-19 23:16:36.304 [5391] coio I> removed /Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000000.snap
+2024-03-19 23:16:36.321 [5391] coio I> removed /Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000000.xlog
+2024-03-20 00:22:24.531 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 01:16:36 2024
+2024-03-20 01:16:36.218 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 02:16:36 2024
+2024-03-20 02:19:46.107 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 03:16:36 2024
+2024-03-20 03:25:42.932 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 04:16:36 2024
+2024-03-20 04:28:48.759 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 05:16:36 2024
+2024-03-20 05:19:56.656 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 06:16:36 2024
+2024-03-20 06:26:31.519 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 07:16:36 2024
+2024-03-20 07:30:15.324 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 08:16:36 2024
+2024-03-20 08:21:47.192 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 09:16:36 2024
+2024-03-20 09:30:31.073 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 10:16:36 2024
+2024-03-20 10:21:38.019 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 11:16:36 2024
+2024-03-20 11:16:36.042 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 12:16:36 2024
+2024-03-20 12:18:35.656 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 13:16:36 2024
+2024-03-20 13:25:30.397 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 14:16:36 2024
+2024-03-20 14:18:05.316 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 15:16:36 2024
+2024-03-20 14:31:45.115 [5391] main/130/console/unix/: C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function <builtin/box/schema.lua:2468>
+	[C]: in function 'pcall'
+	builtin/box/console.lua:427: in function <builtin/box/console.lua:400>
+	[string "local function func(...) return require('cons..."]:1: in main chunk
+	[C]: in function 'pcall'
+	builtin/box/console.lua:427: in function 'eval'
+	builtin/box/console.lua:819: in function 'repl'
+	builtin/box/console.lua:988: in function <builtin/box/console.lua:974>
+	[C]: in function 'pcall'
+	builtin/socket.lua:1138: in function <builtin/socket.lua:1136>
+2024-03-20 14:35:18.132 [5391] main/130/console/unix/: C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return type(box.space.workspace:select())"]:1: in main chunk
+	[C]: in function 'pcall'
+	builtin/box/console.lua:427: in function <builtin/box/console.lua:400>
+	[string "local function func(...) return require('cons..."]:1: in main chunk
+	[C]: in function 'pcall'
+	builtin/box/console.lua:427: in function 'eval'
+	builtin/box/console.lua:819: in function 'repl'
+	builtin/box/console.lua:988: in function <builtin/box/console.lua:974>
+	[C]: in function 'pcall'
+	builtin/socket.lua:1138: in function <builtin/socket.lua:1136>
+2024-03-20 14:36:23.843 [5391] main/130/console/unix/: C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01045615f0
+2024-03-20 14:36:55.391 [5391] main/130/console/unix/: C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01045615f0
+2024-03-20 15:16:36.046 [5391] snapshot/101/main I> saving snapshot `/Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000024.snap.inprogress'
+2024-03-20 15:16:36.049 [5391] snapshot/101/main I> done
+2024-03-20 15:16:36.050 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 16:16:36 2024
+2024-03-20 15:16:36.051 [5391] coio I> removed /Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000010.snap
+2024-03-20 15:16:36.051 [5391] coio I> removed /Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000010.xlog
+2024-03-20 16:20:30.258 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 17:16:36 2024
+2024-03-20 17:16:35.980 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 18:16:35 2024
+2024-03-20 18:21:00.754 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 19:16:35 2024
+2024-03-20 19:16:36.054 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 20:16:35 2024
+2024-03-20 20:16:36.036 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 21:16:36 2024
+2024-03-20 21:26:52.028 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 22:16:36 2024
+2024-03-20 22:26:49.688 [5391] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 23:16:36 2024
+2024-03-20 22:27:34.887 [5391] main C> got signal 15 - Terminated: 15
+2024-03-20 22:27:34.891 [5391] main/589/iproto.shutdown I> tx_binary: stopped
+Watchdog 2024/03/20 22:27:34 (INFO): the Instance has shutdown.
+Watchdog 2024/03/20 22:31:20 (INFO): using "/Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2024-03-20 22:31:21.001 [1324] main/103/interactive I> Tarantool 3.0.1-0-g31c2ddb Darwin-arm64-Release
+2024-03-20 22:31:21.001 [1324] main/103/interactive I> log level 5 (INFO)
+2024-03-20 22:31:21.001 [1324] main/103/interactive I> wal/engine cleanup is paused
+2024-03-20 22:31:21.002 [1324] main/103/interactive I> mapping 268435456 bytes for memtx tuple arena...
+2024-03-20 22:31:21.002 [1324] main/103/interactive I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2024-03-20 22:31:21.002 [1324] main/103/interactive I> mapping 134217728 bytes for vinyl tuple arena...
+2024-03-20 22:31:21.002 [1324] main/103/interactive/box.upgrade I> Recovering snapshot with schema version 3.0.0
+2024-03-20 22:31:21.003 [1324] main/103/interactive I> update replication_synchro_quorum = 1
+2024-03-20 22:31:21.003 [1324] main/103/interactive I> instance uuid f500c005-d956-42f5-ba74-f04cf6b69c4d
+2024-03-20 22:31:21.003 [1324] main/103/interactive I> instance vclock {1: 24}
+2024-03-20 22:31:21.003 [1324] main/103/interactive I> tx_binary: bound to 127.0.0.1:3301
+2024-03-20 22:31:21.003 [1324] main/103/interactive I> recovery start
+2024-03-20 22:31:21.003 [1324] main/103/interactive I> recovering from `/Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000024.snap'
+2024-03-20 22:31:21.003 [1324] main/103/interactive I> replicaset name: replicaset001
+2024-03-20 22:31:21.003 [1324] main/103/interactive I> replicaset uuid 85c2f428-f49d-4493-a50b-bb53efc273e4
+2024-03-20 22:31:21.014 [1324] main/103/interactive I> assigned id 1 to replica f500c005-d956-42f5-ba74-f04cf6b69c4d
+2024-03-20 22:31:21.014 [1324] main/103/interactive I> update replication_synchro_quorum = 1
+2024-03-20 22:31:21.014 [1324] main/103/interactive I> assigned name instance001 to replica f500c005-d956-42f5-ba74-f04cf6b69c4d
+2024-03-20 22:31:21.014 [1324] main/103/interactive I> recover from `/Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000024.xlog'
+2024-03-20 22:31:21.014 [1324] main/103/interactive I> done `/Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000024.xlog'
+2024-03-20 22:31:21.014 [1324] main/103/interactive I> ready to accept requests
+2024-03-20 22:31:21.014 [1324] main/103/interactive I> leaving orphan mode
+2024-03-20 22:31:21.014 [1324] main/105/gc I> wal/engine cleanup is resumed
+2024-03-20 22:31:21.014 [1324] main/103/interactive/box.load_cfg I> set 'custom_proc_title' configuration option to "tarantool - instance001"
+2024-03-20 22:31:21.014 [1324] main/103/interactive/box.load_cfg I> set 'instance_name' configuration option to "instance001"
+2024-03-20 22:31:21.014 [1324] main/103/interactive/box.load_cfg I> set 'log_nonblock' configuration option to false
+2024-03-20 22:31:21.014 [1324] main/103/interactive/box.load_cfg I> set 'replicaset_name' configuration option to "replicaset001"
+2024-03-20 22:31:21.014 [1324] main/103/interactive/box.load_cfg I> set 'listen' configuration option to [{"uri":"127.0.0.1:3301"}]
+2024-03-20 22:31:21.014 [1324] main/103/interactive/box.load_cfg I> set 'metrics' configuration option to {"labels":{"alias":"instance001"},"include":["all"],"exclude":[]}
+2024-03-20 22:31:21.014 [1324] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 00:04:57 2024
+2024-03-20 22:31:21.020 [1324] main/114/console/unix/: sio.c:315 !> getpeername: Invalid argument
+2024-03-20 22:31:21.020 [1324] main/103/interactive I> update replication_synchro_quorum = 1
+2024-03-20 22:31:21.020 [1324] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 00:16:22 2024
+2024-03-20 22:31:21.020 [1324] main I> entering the event loop
+2024-03-20 22:33:49.987 [1324] main C> got signal 2 - Interrupt: 2
+2024-03-20 22:33:49.987 [1324] main/124/iproto.shutdown I> tx_binary: stopped
+Watchdog 2024/03/20 22:33:49 (INFO): the Instance has shutdown.
+Watchdog 2024/03/20 22:33:50 (INFO): using "/Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+LuajitError: [cluster_config] groups.group001.replicasets.replicaset001.instances.instance001.iproto.listen[1]: Unexpected field "url"
+fatal error, exiting the event loop
+Watchdog 2024/03/20 22:33:50 (WARN): "exit status 1".
+Watchdog 2024/03/20 22:33:50 (INFO): the Instance has shutdown.
+Watchdog 2024/03/20 22:38:42 (INFO): using "/Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+LuajitError: [cluster_config] groups.group001.replicasets.replicaset001.instances.instance001.iproto.listen[1]: Unexpected field "url"
+fatal error, exiting the event loop
+Watchdog 2024/03/20 22:38:42 (WARN): "exit status 1".
+Watchdog 2024/03/20 22:38:42 (INFO): the Instance has shutdown.
+Watchdog 2024/03/20 22:40:09 (INFO): using "/Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2024-03-20 22:40:09.787 [1680] main/103/interactive I> Tarantool 3.0.1-0-g31c2ddb Darwin-arm64-Release
+2024-03-20 22:40:09.788 [1680] main/103/interactive I> log level 5 (INFO)
+2024-03-20 22:40:09.788 [1680] main/103/interactive I> wal/engine cleanup is paused
+2024-03-20 22:40:09.788 [1680] main/103/interactive I> mapping 268435456 bytes for memtx tuple arena...
+2024-03-20 22:40:09.788 [1680] main/103/interactive I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2024-03-20 22:40:09.789 [1680] main/103/interactive I> mapping 134217728 bytes for vinyl tuple arena...
+2024-03-20 22:40:09.790 [1680] main/103/interactive/box.upgrade I> Recovering snapshot with schema version 3.0.0
+2024-03-20 22:40:09.791 [1680] main/103/interactive I> update replication_synchro_quorum = 1
+2024-03-20 22:40:09.791 [1680] main/103/interactive I> instance uuid f500c005-d956-42f5-ba74-f04cf6b69c4d
+2024-03-20 22:40:09.791 [1680] main/103/interactive I> instance vclock {1: 24}
+2024-03-20 22:40:09.791 [1680] main/103/interactive I> tx_binary: bound to 127.0.0.1:3301
+2024-03-20 22:40:09.791 [1680] main/103/interactive I> recovery start
+2024-03-20 22:40:09.791 [1680] main/103/interactive I> recovering from `/Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000024.snap'
+2024-03-20 22:40:09.791 [1680] main/103/interactive I> replicaset name: replicaset001
+2024-03-20 22:40:09.791 [1680] main/103/interactive I> replicaset uuid 85c2f428-f49d-4493-a50b-bb53efc273e4
+2024-03-20 22:40:09.810 [1680] main/103/interactive I> assigned id 1 to replica f500c005-d956-42f5-ba74-f04cf6b69c4d
+2024-03-20 22:40:09.810 [1680] main/103/interactive I> update replication_synchro_quorum = 1
+2024-03-20 22:40:09.810 [1680] main/103/interactive I> assigned name instance001 to replica f500c005-d956-42f5-ba74-f04cf6b69c4d
+2024-03-20 22:40:09.810 [1680] main/103/interactive I> recover from `/Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000024.xlog'
+2024-03-20 22:40:09.810 [1680] main/103/interactive I> done `/Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000024.xlog'
+2024-03-20 22:40:09.810 [1680] main/103/interactive I> ready to accept requests
+2024-03-20 22:40:09.810 [1680] main/103/interactive I> leaving orphan mode
+2024-03-20 22:40:09.810 [1680] main/105/gc I> wal/engine cleanup is resumed
+2024-03-20 22:40:09.810 [1680] main/103/interactive/box.load_cfg I> set 'custom_proc_title' configuration option to "tarantool - instance001"
+2024-03-20 22:40:09.810 [1680] main/103/interactive/box.load_cfg I> set 'instance_name' configuration option to "instance001"
+2024-03-20 22:40:09.810 [1680] main/103/interactive/box.load_cfg I> set 'log_nonblock' configuration option to false
+2024-03-20 22:40:09.810 [1680] main/103/interactive/box.load_cfg I> set 'replicaset_name' configuration option to "replicaset001"
+2024-03-20 22:40:09.810 [1680] main/103/interactive/box.load_cfg I> set 'listen' configuration option to [{"uri":"127.0.0.1:3301"}]
+2024-03-20 22:40:09.810 [1680] main/103/interactive/box.load_cfg I> set 'metrics' configuration option to {"labels":{"alias":"instance001"},"include":["all"],"exclude":[]}
+2024-03-20 22:40:09.810 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 20 23:55:31 2024
+2024-03-20 22:40:09.815 [1680] main/114/console/unix/: sio.c:315 !> getpeername: Invalid argument
+2024-03-20 22:40:09.815 [1680] main/103/interactive I> update replication_synchro_quorum = 1
+2024-03-20 22:40:09.816 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 00:06:30 2024
+2024-03-20 22:40:09.816 [1680] main I> entering the event loop
+2024-03-20 22:40:25.718 [1680] main/119/console/unix/: I> tx_binary: stopped
+2024-03-20 22:40:25.718 [1680] main/119/console/unix/: I> tx_binary: bound to [::]:3301
+2024-03-20 22:40:25.718 [1680] main/119/console/unix/:/box.load_cfg I> set 'listen' configuration option to 3301
+2024-03-20 22:59:14.776 [1680] main/153/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-20 22:59:36.496 [1680] main/128/console/unix/: C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function <builtin/box/schema.lua:2468>
+	[C]: in function 'pcall'
+	builtin/box/console.lua:427: in function <builtin/box/console.lua:400>
+	[string "local function func(...) return require('cons..."]:1: in main chunk
+	[C]: in function 'pcall'
+	builtin/box/console.lua:427: in function 'eval'
+	builtin/box/console.lua:819: in function 'repl'
+	builtin/box/console.lua:988: in function <builtin/box/console.lua:974>
+	[C]: in function 'pcall'
+	builtin/socket.lua:1138: in function <builtin/socket.lua:1136>
+2024-03-21 00:16:17.916 [1680] snapshot/101/main I> saving snapshot `/Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000027.snap.inprogress'
+2024-03-21 00:16:17.921 [1680] snapshot/101/main I> done
+2024-03-21 00:16:17.923 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 01:06:30 2024
+2024-03-21 00:16:17.925 [1680] coio I> removed /Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000013.snap
+2024-03-21 00:16:17.926 [1680] coio I> removed /Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000013.xlog
+2024-03-21 01:01:43.026 [1680] main/205/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 01:02:05.844 [1680] main/208/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 01:02:42.760 [1680] main/210/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 01:02:55.994 [1680] main/212/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 01:03:10.768 [1680] main/215/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 01:03:25.911 [1680] main/217/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 01:06:30.822 [1680] snapshot/101/main I> saving snapshot `/Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000029.snap.inprogress'
+2024-03-21 01:06:30.825 [1680] snapshot/101/main I> done
+2024-03-21 01:06:30.826 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 02:06:30 2024
+2024-03-21 01:06:30.827 [1680] coio I> removed /Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000024.snap
+2024-03-21 01:06:30.828 [1680] coio I> removed /Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000024.xlog
+2024-03-21 01:45:50.438 [1680] main/263/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 01:46:11.258 [1680] main/264/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 01:46:39.786 [1680] main/266/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 01:47:33.526 [1680] main/268/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 01:48:14.418 [1680] main/269/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 01:48:35.232 [1680] main/270/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 02:17:14.611 [1680] snapshot/101/main I> saving snapshot `/Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000031.snap.inprogress'
+2024-03-21 02:17:14.612 [1680] snapshot/101/main I> done
+2024-03-21 02:17:14.613 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 03:06:30 2024
+2024-03-21 02:17:14.614 [1680] coio I> removed /Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000027.snap
+2024-03-21 02:17:14.616 [1680] coio I> removed /Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000027.xlog
+2024-03-21 03:24:13.372 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 04:06:30 2024
+2024-03-21 04:13:14.620 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 05:06:30 2024
+2024-03-21 05:12:51.947 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 06:06:30 2024
+2024-03-21 06:14:44.796 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 07:06:30 2024
+2024-03-21 07:20:58.626 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 08:06:30 2024
+2024-03-21 08:13:35.558 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 09:06:30 2024
+2024-03-21 09:18:32.334 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 10:06:30 2024
+2024-03-21 10:16:00.166 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 11:06:30 2024
+2024-03-21 11:14:00.985 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 12:06:30 2024
+2024-03-21 12:15:22.899 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 13:06:30 2024
+2024-03-21 13:17:25.753 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 14:06:30 2024
+2024-03-21 14:17:58.512 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 15:06:30 2024
+2024-03-21 15:19:00.411 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 16:06:30 2024
+2024-03-21 16:20:11.258 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 17:06:30 2024
+2024-03-21 17:21:30.062 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 18:06:30 2024
+2024-03-21 17:54:47.243 [1680] main/342/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 18:03:09.256 [1680] main/352/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 18:04:29.524 [1680] main/355/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 18:05:26.406 [1680] main/357/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 18:06:12.401 [1680] main/359/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 18:06:30.516 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 19:06:30 2024
+2024-03-21 18:11:28.120 [1680] main/365/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 18:14:57.972 [1680] main/369/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 18:15:24.159 [1680] main/371/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 18:17:13.250 [1680] main/374/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
