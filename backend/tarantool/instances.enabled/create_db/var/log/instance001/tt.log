@@ -564,3 +564,66 @@ started
 	builtin/box/schema.lua:2482: in function 'select'
 	[string "return function()..."]:7: in function <[string "return function()..."]:1>
 	[C]: at 0x01024455f0
+2024-03-21 22:06:30.593 [1680] snapshot/101/main I> saving snapshot `/Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000038.snap.inprogress'
+2024-03-21 22:06:30.595 [1680] snapshot/101/main I> done
+2024-03-21 22:06:30.597 [1680] main/106/checkpoint_daemon I> scheduled next checkpoint for Thu Mar 21 23:06:30 2024
+2024-03-21 22:06:30.598 [1680] coio I> removed /Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000029.snap
+2024-03-21 22:06:30.599 [1680] coio I> removed /Users/filledevoler/Desktop/coursework/backend/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000029.xlog
+2024-03-21 22:38:03.688 [1680] main/128/console/unix/: C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function <builtin/box/schema.lua:2468>
+	[C]: in function 'pcall'
+	builtin/box/console.lua:427: in function <builtin/box/console.lua:400>
+	[string "local function func(...) return require('cons..."]:1: in main chunk
+	[C]: in function 'pcall'
+	builtin/box/console.lua:427: in function 'eval'
+	builtin/box/console.lua:819: in function 'repl'
+	builtin/box/console.lua:988: in function <builtin/box/console.lua:974>
+	[C]: in function 'pcall'
+	builtin/socket.lua:1138: in function <builtin/socket.lua:1136>
+2024-03-21 22:38:30.972 [1680] main/128/console/unix/: C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function <builtin/box/schema.lua:2468>
+	[C]: in function 'pcall'
+	builtin/box/console.lua:427: in function <builtin/box/console.lua:400>
+	[string "local function func(...) return require('cons..."]:1: in main chunk
+	[C]: in function 'pcall'
+	builtin/box/console.lua:427: in function 'eval'
+	builtin/box/console.lua:819: in function 'repl'
+	builtin/box/console.lua:988: in function <builtin/box/console.lua:974>
+	[C]: in function 'pcall'
+	builtin/socket.lua:1138: in function <builtin/socket.lua:1136>
+2024-03-21 22:42:27.088 [1680] main/128/console/unix/: C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function <builtin/box/schema.lua:2468>
+	[C]: in function 'pcall'
+	builtin/box/console.lua:427: in function <builtin/box/console.lua:400>
+	[string "local function func(...) return require('cons..."]:1: in main chunk
+	[C]: in function 'pcall'
+	builtin/box/console.lua:427: in function 'eval'
+	builtin/box/console.lua:819: in function 'repl'
+	builtin/box/console.lua:988: in function <builtin/box/console.lua:974>
+	[C]: in function 'pcall'
+	builtin/socket.lua:1138: in function <builtin/socket.lua:1136>
+2024-03-21 22:42:34.731 [1680] main/668/main C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function 'select'
+	[string "return function()..."]:7: in function <[string "return function()..."]:1>
+	[C]: at 0x01024455f0
+2024-03-21 22:42:58.601 [1680] main/128/console/unix/: C> Potentially long select from space 'workspace' (514)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function <builtin/box/schema.lua:2468>
+	[C]: in function 'pcall'
+	builtin/box/console.lua:427: in function <builtin/box/console.lua:400>
+	[string "local function func(...) return require('cons..."]:1: in main chunk
+	[C]: in function 'pcall'
+	builtin/box/console.lua:427: in function 'eval'
+	builtin/box/console.lua:819: in function 'repl'
+	builtin/box/console.lua:988: in function <builtin/box/console.lua:974>
+	[C]: in function 'pcall'
+	builtin/socket.lua:1138: in function <builtin/socket.lua:1136>

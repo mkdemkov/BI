@@ -7,9 +7,10 @@ from aiogram.client.bot import DefaultBotProperties
 from config import BOT_TOKEN
 from handlers import commands, callbacks, work_space
 
+bot = Bot(token=BOT_TOKEN, default=DefaultBotProperties(parse_mode="HTML"))
+
 
 async def main():
-    bot = Bot(token=BOT_TOKEN, default=DefaultBotProperties(parse_mode="HTML"))
     dp = Dispatcher()
     dp.include_routers(commands.router, callbacks.router, work_space.router)
 

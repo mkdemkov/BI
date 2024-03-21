@@ -1,12 +1,16 @@
+import os
+
 from aiogram import Router, F, types
 from aiogram.fsm.context import FSMContext
 from aiogram.types.input_file import FSInputFile
 
+from frontend.bot.main import bot
 from frontend.bot.misc.export import process_csv_export
+from frontend.bot.misc.import_data import form_data_csv
 from frontend.bot.states.work_space import WorkSpace
 from frontend.bot.keyboards.inline_keyboards import create_workspace_button, options_with_data_keyboard, \
     export_types_keyboard
-from frontend.bot.get_info_from_api import get_workspace
+from frontend.bot.get_info_from_api import get_workspace, import_data
 from frontend.bot.utils.tuples import show_tuples, create_tuples
 
 router = Router(name=__name__)
@@ -37,8 +41,23 @@ async def file_test(message: types.Message, state: FSMContext):
     if not (message.document.file_name.endswith(".csv") or message.document.file_name.endswith(".xlsx")):
         await message.answer("Поддерживаемые форматы: <b>CSV</b> и <b>XLSX</b>\n\nОтправьте нужный файл повторно")
         return
-    # Stop here
-    await message.answer(message.document.file_name, reply_markup=options_with_data_keyboard)
+    filename = message.document.file_name
+    file_id = message.document.file_id
+    file = await bot.get_file(file_id)
+    file_path = file.file_path
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    parent_dir = os.path.dirname(current_dir)
+    destination_file = os.path.join(parent_dir, "user_data", message.document.file_name)
+    await bot.download_file(file_path, destination=destination_file)
+    message = \
+        await message.answer(
+            f"Файл {filename} загружен. РО добавлена. Подождите, сейчас данные загрузятся и с ними можно будет работать"
+        )
+    data = form_data_csv(destination_file)
+    res = await import_data(data)
+    print(res)
+    tuples_to_show = show_tuples(res)
+    await message.answer(tuples_to_show, reply_markup=options_with_data_keyboard)
     await state.clear()
 
 
@@ -46,8 +65,6 @@ async def file_test(message: types.Message, state: FSMContext):
 async def export_workspace(callback: types.CallbackQuery, state: FSMContext):
     await callback.message.answer("Выберите тип файла для эскпорта", reply_markup=export_types_keyboard)
     await state.set_state(WorkSpace.choose_file_type)
-    # data = await load_data_and_export()  # all the tuples stored
-    # print(data)
 
 
 @router.callback_query(F.data == 'csv_export')
@@ -55,6 +72,7 @@ async def export_csv(callback: types.CallbackQuery):
     await process_csv_export()
     document = FSInputFile('data.csv')
     await callback.message.answer_document(document)
+    # TODO send at least a keyboard with workspace options
 
 
 @router.callback_query(F.data == 'xlsx_export')

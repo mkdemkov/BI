@@ -32,3 +32,6 @@ class TarantoolConnector:
         data = self.connection.space('workspace').select().data
         self.connection.call('remove_workspace')
         return data
+
+    def clear_workspace(self):
+        self.connection.call('remove_workspace')
