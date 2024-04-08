@@ -5,14 +5,14 @@ from aiogram import Bot, Dispatcher
 from aiogram.client.bot import DefaultBotProperties
 
 from config import BOT_TOKEN
-from handlers import commands, callbacks, work_space
+from handlers import commands, callbacks
 
 bot = Bot(token=BOT_TOKEN, default=DefaultBotProperties(parse_mode="HTML"))
 
 
 async def main():
     dp = Dispatcher()
-    dp.include_routers(commands.router, callbacks.router, work_space.router)
+    dp.include_routers(commands.router, callbacks.router)
 
     await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot)

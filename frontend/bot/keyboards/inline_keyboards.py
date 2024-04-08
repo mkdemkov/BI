@@ -7,12 +7,16 @@ workspaces = {
 }
 
 options = {
-    'Умножение': 'multiple_data',
-    'Экспортировать РО': 'export_workspace',
+    'Умножение ✖️': 'multiple_data',
+    'Сложение ➕': 'sum_data',
+    'Вычитание ➖': 'diff_data',
+    'Целая часть ➗': 'divide_data',
+    'Остаток от деления ⁒': 'divide_diff_data',
+    'Экспортировать РО ⏚': 'export_workspace',
 }
 
 export_types = {
-    'CSV': 'csv_export',
+    'CSV ': 'csv_export',
     'EXCEL': 'xlsx_export'
 }
 

@@ -6,6 +6,11 @@ async def get_workspace():
     return response.json()
 
 
+async def get_workspace_optimal():
+    response = requests.get("http://127.0.0.1:8000/get_workspace_optimal")
+    return response.json()
+
+
 async def load_data():
     response = requests.get("http://127.0.0.1:8000/export_workspace")
     return response.json()
@@ -14,4 +19,14 @@ async def load_data():
 async def import_data(data):
     data_json_compatible = [list(item) for item in data]
     response = requests.post(url="http://127.0.0.1:8000/import_data", json=data_json_compatible)
+    return response.json()
+
+
+async def transform_data(oper, num, col):
+    data = {
+        'operation': oper,
+        'number': num,
+        'column': col
+    }
+    response = requests.post(url="http://127.0.0.1:8000/transform_data", json=data)
     return response.json()
